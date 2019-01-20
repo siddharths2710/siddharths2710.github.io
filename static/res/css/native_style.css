@@ -759,3 +759,215 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #883510;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Lobster");
+
+
+
+.cardcenter {
+  position: relative;
+  left: 417px;  
+  height: 299px;
+  width: 320px;
+  background: #f2f2f2;
+  border-radius: 6px;
+  box-shadow: 0.6rem 0.8rem 1.2rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.cardprofile {
+  float: left;
+  width: 200px;
+  height: 320px;
+  text-align: center;
+}
+
+.cardprofile .cardimage {
+  position: relative;
+  width: 80px;
+  height: 70px;
+  margin: 38px auto 0 auto;
+}
+
+.cardprofile .cardimage .cardcircle-1, .cardprofile .cardimage .cardcircle-2 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 76px;
+  height: 76px;
+  top: -3px;
+  left: -3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #883510 #883510 #883510 transparent;
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+
+.cardcircle-1 {
+  animation: circle-1 2s;
+}
+
+@keyframes cardcircle-1 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.cardprofile .cardimage .cardcircle-2 {
+  width: 82px;
+  height: 82px;
+  top: -6px;
+  left: -6px;
+  border-color: #883510 transparent #883510 #883510;
+  animation: circle 2s;
+}
+
+@keyframes cardcircle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.cardprofile .cardimage img {
+  display: block;
+  border-radius: 50%;
+  background: #F5E8DF;
+}
+
+.cardprofile .cardimage:hover {
+  cursor: pointer;
+}
+
+.cardprofile .cardimage:hover .cardcircle-1, .cardprofile .cardimage:hover .cardcircle-2 {
+  transform: rotate(360deg);
+}
+
+.cardprofile .cardimage:hover .cardcircle-2 {
+  transform: rotate(-360deg);
+}
+
+.cardprofile .cardname {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.cardprofile .cardjob {
+  font-size: 1.2rem;
+  line-height: 15px;
+}
+
+svg {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.cardprofile .cardactions .cardbtn {
+  display: block;
+  width: 80px;
+  height: 30px;
+  margin: 0 auto 10px auto;
+  background: none;
+  border: 2px solid transparent;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  color: #883510;
+}
+
+.cardbtn, .cardparameter {
+  font-family: 'Josefin sans';
+}
+
+.cardprofile .cardactions .cardbtn:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.cardstats .cardbox {
+  box-sizing: border-box;
+  width: 120px;
+  height: 99px;
+  background: #e1ba9d;
+  text-align: center;
+  padding-top: 28px;
+  transition: all .4s ease-in-out;
+  color: #974710;
+}
+
+
+.cardstats .cardbox:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.cardhvr-underline-from-right {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.cardhvr-underline-from-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: #883510;
+  height: 99px;
+  transition-property: left;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.cardhvr-underline-from-right:hover:before, .cardhvr-underline-from-right:focus:before, .cardhvr-underline-from-right:active:before {
+  left: 0;
+}
+
+.cardstats .cardbox:nth-child(2) {
+  margin: 1px 0;
+}
+
+.cardstats span {
+  display: block;
+}
+
+.cardstats .value {
+  font-size: 1.8rem;
+  font-family: lobster;
+}
+
+.cardstats .cardparameter {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+
+
+
