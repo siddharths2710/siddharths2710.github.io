@@ -76,7 +76,7 @@ function changeHeaderText()
 $(document).ready(function()
 {
 	jHeaderText = $(".dyn-text");
-	sentences = ["CAFFEINE THEMER","AVID SWIMMER","RUBIK'S CUBE SOLVER"];
+	sentences = ["DEVELOPER","AVID SWIMMER","RUBIK'S CUBE SOLVER"];
 
 	changeHeaderText();
 
