@@ -392,8 +392,8 @@ section h3.section-subheading {
   bottom: 0;
   position: absolute;
   content: "";
-  width: 2px;
-  background-color: #f1f1f1;
+  width: 4px;
+  background-color: rgba(141, 74, 43, 0.71);
   left: 40px;
   margin-left: -1.5px;
 }
