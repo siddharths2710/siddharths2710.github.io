@@ -118,7 +118,7 @@ fieldset[disabled] .btn-primary.active {
       text-transform: uppercase;
       font-weight: 550;
       border-radius: 3px;
-      font-size: 16px;
+      font-size: 13px;
       padding: 8px 20px;
     }
 
@@ -170,6 +170,20 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 450;
   background-color:rgba(0,0,0,0);
 }
+
+
+@media (max-width:768px) {
+
+    .navbar-custom .navbar-brand {
+      color: rgb(201, 138, 109);
+      font-family: "Apple Chancery", Apple Chancery, cursive;
+      font-weight: 400;
+      background-color:rgba(0,0,0,0);
+      font-size: 15px;
+    }
+
+}
+
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
@@ -478,7 +492,7 @@ section h3.section-subheading {
   color: white;
   border-radius: 100%;
   text-shadow: none;
-  background: #883510;
+  background:   #b5592e;
   border: 3px solid #712700;
   text-align: center;
 }
