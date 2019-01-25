@@ -116,10 +116,11 @@ fieldset[disabled] .btn-primary.active {
       font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
       text-transform: uppercase;
-      font-weight: 550;
+      font-weight: 520;
       border-radius: 3px;
-      font-size: 13px;
-      padding: 8px 20px;
+      font-size: 11px;
+      padding: 10px 20px;
+        margin-top: 28px;
     }
 
 }
@@ -250,6 +251,7 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 3px;
   }
 }
+
 @media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: rgba(88, 47, 30, 0.89);
@@ -269,7 +271,8 @@ fieldset[disabled] .btn-xl.active {
     width: 100%;
     height: 100%;
     z-index: -100;
-    
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 header {
 
@@ -287,6 +290,8 @@ header .intro-text {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+
 header .intro-text .intro-lead-in {
   font-family: "Courier", Courier, monospace;
   font-style: italic;
@@ -493,7 +498,7 @@ section h3.section-subheading {
   border-radius: 100%;
   text-shadow: none;
   background:   #b5592e;
-  border: 3px solid #712700;
+  border: 2px solid #712700;
   text-align: center;
 }
 .timeline > li .timeline-image h4 {
@@ -559,7 +564,7 @@ section h3.section-subheading {
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
-    text-align: left;
+    text-align: justify;
     padding: 0 30px 20px 20px;
   }
 }
@@ -616,80 +621,7 @@ section h3.section-subheading {
     padding: 0 100px 20px 20px;
   }
 }
-.team-member {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.team-member img {
-  margin: 0 auto;
-  border: 7px solid white;
-}
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-.team-member p {
-  margin-top: 0;
-}
-aside.clients img {
-  margin: 50px auto;
-}
-section#contact {
-  background-color: #222222;
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-section#contact .section-heading {
-  color: white;
-}
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
-}
-section#contact .form-group input.form-control {
-  height: auto;
-}
-section#contact .form-group textarea.form-control {
-  height: 236px;
-}
-section#contact .form-control:focus {
-  border-color: #883510;
-  box-shadow: none;
-}
-section#contact ::-webkit-input-placeholder {
-  font-family: "Courier New", Courier, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact :-moz-placeholder {
-  /* Firefox 18- */
-  font-family: "Courier New", Courier, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact ::-moz-placeholder {
-  /* Firefox 19+ */
-  font-family: "Courier New", Courier, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact :-ms-input-placeholder {
-  font-family: "Courier New", Courier, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact .text-danger {
-  color: #e74c3c;
-}
+
 footer {
   padding: 25px 0;
   text-align: center;
@@ -850,7 +782,7 @@ body {
 
 .cardcenter {
   position: relative;
-  left: 417px;  
+  left: 36%;  
   height: 299px;
   width: 320px;
   background: #f2f2f2;
@@ -860,7 +792,19 @@ body {
 }
 
 
+@media (max-aspect-ratio: 768/1024) {
+        .cardcenter {
+      position: relative;
+      left: 34%;  
+      height: 299px;
+      width: 320px;
+      background: #f2f2f2;
+      border-radius: 6px;
+      box-shadow: 0.6rem 0.8rem 1.2rem rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
 
+}
 
 .cardprofile {
   float: left;
@@ -1037,11 +981,11 @@ svg {
 
 
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 
 .cardcenter {
   position: relative;
-  left: 20px;  
+  left: 20px;   
   height: 299px;
   width: 318px;
   background: #f2f2f2;
