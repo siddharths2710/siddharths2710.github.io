@@ -28,6 +28,8 @@
         }
     })
 
+    
+
 })(jQuery); // End of use strict
     
 
@@ -73,9 +75,11 @@ function changeHeaderText()
 
 $(document).ready(function()
 {
+	
+
 	jHeaderText = $(".dyn-text");
 	sentences = ["TECH BLOGGER","AVID SWIMMER","SIMPLISTIC THINKER"];
-
+	$('#mining-button-text').html('MINE YOUR COINS');
 	changeHeaderText();
 
 	/*while(true)

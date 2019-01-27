@@ -175,6 +175,10 @@ fieldset[disabled] .btn-xl.active {
 
 @media (max-width:768px) {
 
+    .navbar {
+      display: none;
+    }
+
     .navbar-custom .navbar-brand {
       color: rgb(201, 138, 109);
       font-family: "Apple Chancery", Apple Chancery, cursive;
@@ -367,17 +371,20 @@ section h3.section-subheading {
     padding: 95px 0;
   }
 }
-@media (max-width: 768px) {
-  section {
-    padding: 79px 0;
-  }
-}
 
 @media (max-aspect-ratio: 768/1024) {
     section {
     padding: 500px 0;
   }
 }
+
+@media (max-width: 768px) {
+  section {
+    padding: 79px 0;
+  }
+}
+
+
 
 .service-heading {
   margin: 15px 0;
@@ -1051,4 +1058,12 @@ svg {
     
 }
 
+.coinhive-miner {
+  position:relative;left:37%;width: 299px; height: 320px;
+}
 
+@media (max-width:767px) {
+  .coinhive-miner {
+    position:relative;left:11%;width: 299px; height: 320px;
+  }
+}
