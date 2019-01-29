@@ -384,6 +384,11 @@ section h3.section-subheading {
   }
 }
 
+@media (aspect-ratio: 1920/1200) {
+    section {
+    padding: 340px 0;
+  }
+}
 
 
 .service-heading {
