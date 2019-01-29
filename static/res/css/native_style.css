@@ -383,7 +383,7 @@ section h3.section-subheading {
   }
 }
 
-@media (min-aspect-ratio: 1920/1200) {
+@media (max-aspect-ratio: 1920/1200) {
     section {
     padding: 340px 0;
   }
