@@ -73,27 +73,25 @@ function changeHeaderText()
 	setTimeout(changeHeaderText, timeout);
 }
 
+
+function showAdBlockMsg()
+{
+	if(! document.getElementById('studads-iframe') )
+	{
+		document.getElementById('adblk-msg').style.display='block';
+	}
+}
+
 $(document).ready(function()
 {
 	
 
 	jHeaderText = $(".dyn-text");
-	sentences = ["TECH BLOGGER","AVID SWIMMER","SIMPLISTIC THINKER"];
+	sentences = ["PRODUCT DEVELOPER","AVID SWIMMER","TECH BLOGGER"];
 	$('#mining-button-text').html('MINE YOUR COINS');
 	changeHeaderText();
 
-	/*while(true)
-	{
-		for(i=0; i<sentences.length; i++)
-		{
-			jHeaderText.html("");
-			s = sentences[i];
-			for(j=1; j<s.length; j++)
-			{
-				jHeaderText.html(s.slice(0, j));
+	setTimeout(showAdBlockMsg,700);
 
-			}
-		}
-	}*/
 	
 });

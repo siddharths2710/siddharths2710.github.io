@@ -3,6 +3,7 @@
 
                         iframe_reference = document.createElement('iframe');
                         iframe_reference.className = "img-circle img-responsive";
+                        iframe_reference.id = "studads-iframe";
                         iframe_reference.style = "position:relative;left:4%;top:4%;width:91%;height:91%;"
 
                         if (iframe_reference.scrolling != undefined)
